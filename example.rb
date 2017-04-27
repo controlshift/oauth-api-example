@@ -1,5 +1,4 @@
 require 'oauth2'
-require 'byebug'
 
 # START CONFIGURATION SETTINGS
 # Replace these variable values with values for your instance of your platform. 
