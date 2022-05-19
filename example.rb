@@ -11,7 +11,7 @@ controlshift_url = 'https://demo.controlshiftlabs.com'
 client = OAuth2::Client.new(client_id, client_secret, site: controlshift_url)
 
 token = client.client_credentials.get_token
-token.get('/api/v1/members/lookup', params: {'email' => 'woodhull@gmail.com'})
+response = token.get('/api/v1/members/lookup', params: {'email' => 'woodhull@gmail.com'})
 
 # This will print the response. You likely want to do something else useful with this information.
 puts json = JSON.parse(response.body)
