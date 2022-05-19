@@ -5,10 +5,10 @@ require 'oauth2'
 client_id = 'xxabc123'
 client_secret = 'xxabc123'
 # Replace this with your platform URL
-constrolshift_url = 'https://demo.controlshiftlabs.com'
+controlshift_url = 'https://demo.controlshiftlabs.com'
 # END CONFIGURATION SETTINGS
 
-client = OAuth2::Client.new(client_id, client_secret, site: constrolshift_url)
+client = OAuth2::Client.new(client_id, client_secret, site: controlshift_url)
 
 token = client.client_credentials.get_token
 token.get('/api/v1/members/lookup', params: {'email' => 'woodhull@gmail.com'})
