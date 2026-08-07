@@ -1,5 +1,7 @@
 # oauth-api-example
-Simplest possible example of using ruby to access our authenticated API
+Simplest possible example of using ruby to access our authenticated API via oauth.
+
+If you're developing something new that calls the ControlShift API, we strongly recommend using [API Keys](https://developers.controlshiftlabs.com/#authenticated-rest-api-getting-started-using-api-keys) instead.
 
 ## Background
 
